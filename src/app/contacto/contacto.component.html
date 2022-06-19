@@ -1,1 +1,33 @@
-<p>contacto works!</p>
+<div class="container">
+    <section>
+     <label for="name">
+      Nombre completo:
+      <input
+        name="name"
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Nombre completo"
+      />
+    </label>
+    </section>
+    <br>
+  <label>
+    Dirección de correo:
+    <input type="text" [formControl]="email"  placeholder="Dirección de correo">
+  </label>
+  <p>Value: {{ email.value }}</p>
+
+  <section>
+    Cuenta:
+    <input type="text" [(ngModel)]="cuenta" placeholder="Cuenta">
+    <br>
+    Contraseña:
+    <input type="text" [(ngModel)]="contra1" placeholder="Contraseña">
+    <br>
+    Repetir contraseña:
+    <input type="text" [(ngModel)]="contra2" placeholder="Repetir contraseña">
+  </section>
+  <section>
+    <button (click)="updateEmail()">Enviar</button>
+  </section>
+</div>
