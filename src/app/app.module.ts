@@ -16,12 +16,14 @@ import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    InicioComponent
+    InicioComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
