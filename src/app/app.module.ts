@@ -17,13 +17,15 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     InicioComponent,
-    ContactoComponent
+    ContactoComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
