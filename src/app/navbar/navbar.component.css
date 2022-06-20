@@ -1,0 +1,11 @@
+@media(max-width:574px){
+    div{
+        text-align: center;
+        align-items: center;
+    }
+    a{
+        text-align: center;
+        align-items: center;
+    }
+
+}

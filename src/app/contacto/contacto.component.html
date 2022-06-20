@@ -2,7 +2,7 @@
     <section>
      <label for="name">
       Nombre completo:
-      <input
+      <input class="nombre"
         name="name"
         type="text"
         [(ngModel)]="name"
@@ -13,20 +13,28 @@
     <br>
   <label>
     Dirección de correo:
-    <input type="text" [formControl]="email"  placeholder="Dirección de correo">
+    <input class="correo" type="text" [formControl]="email"  placeholder="Dirección de correo">
   </label>
-  <p>Value: {{ email.value }}</p>
+  <!-- <p>Value: {{ email.value }}</p> -->
 
   <section>
     Cuenta:
-    <input type="text" [(ngModel)]="cuenta" placeholder="Cuenta">
+    <input class="cuenta" type="text" [(ngModel)]="cuenta" placeholder="Cuenta">
     <br>
     Contraseña:
-    <input type="text" [(ngModel)]="contra1" placeholder="Contraseña">
+    <input class="contra1" type="text" [(ngModel)]="contra1" placeholder="Contraseña">
     <br>
     Repetir contraseña:
-    <input type="text" [(ngModel)]="contra2" placeholder="Repetir contraseña">
+    <input class="contra2" type="text" [(ngModel)]="contra2" placeholder="Repetir contraseña">
   </section>
+  <br>
+  <section class="aa">
+    Pregunta o queja:
+  
+    <textarea class="queja" name="queja" id="queja" cols="30" rows="5" [formControl]="texto"></textarea>
+    <!-- <p>Value: {{ texto.value }}</p> -->
+  </section>
+  <br>
   <section>
     <button (click)="updateEmail()">Enviar</button>
   </section>

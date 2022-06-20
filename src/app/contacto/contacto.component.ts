@@ -13,10 +13,14 @@ export class ContactoComponent implements OnInit {
   cuenta: string="";
   contra1: string="";
   contra2: string="";
+  /* texto: string=""; */
+
+  texto=new FormControl("");
   
   updateEmail() {
-    this.email.setValue("ikernaix@gmail.com");
-    this._name = "Iker";
+    /* this.email.setValue("ikernaix@gmail.com");
+    this._name = "Iker"; */
+    
   }
 
   _name: string="";
