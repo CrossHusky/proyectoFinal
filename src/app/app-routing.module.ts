@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'faq', component: FaqComponent },
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
 ];
 
 @NgModule({
