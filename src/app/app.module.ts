@@ -18,6 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FaqComponent } from './faq/faq.component';
+import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FaqComponent } from './faq/faq.component';
     NavbarComponent,
     InicioComponent,
     ContactoComponent,
-    FaqComponent
+    FaqComponent,
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
