@@ -70,6 +70,18 @@
 <div class="container mt-5 mb-5 p-5 bg-secondary text-white rounded">
   <h1>¿Listo para musicalizarte?</h1>
   <p>¡Incia Sesión o Registrate para comenzar!</p>
-  <button type="button" class="m-1 btn btn-primary rounded fw-bold">Iniciar Sesión</button>
-  <button type="button" class="m-1 btn btn-success rounded fw-bold">Registrarse</button>
+  <button
+    type="button"
+    class="m-1 btn btn-primary rounded fw-bold"
+    (click)=goToLogin()
+  >
+    Iniciar Sesión
+  </button>
+  <button
+    type="button"
+    class="m-1 btn btn-success rounded fw-bold"
+    (click)=goToRegistro()
+  >
+    Registrarse
+  </button>
 </div>

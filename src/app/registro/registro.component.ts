@@ -7,7 +7,7 @@ import { AuthService } from '../shared/services/auth.service';
   styleUrls: ['./registro.component.css'],
 })
 export class RegistroComponent implements OnInit {
-  constructor(public authService: AuthService) {}
+  constructor(/*public authService: AuthService*/) {}
 
   ngOnInit(): void {}
 }

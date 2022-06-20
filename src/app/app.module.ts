@@ -21,6 +21,7 @@ import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { AuthService } from './shared/services/auth.service';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AuthService } from './shared/services/auth.service';
     ContactoComponent,
     FaqComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
