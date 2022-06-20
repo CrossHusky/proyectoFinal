@@ -20,6 +20,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
+import { AuthService } from './shared/services/auth.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { RegistroComponent } from './registro/registro.component';
     provideStorage(() => getStorage())
   ],
   providers: [
-    ScreenTrackingService,UserTrackingService
+    ScreenTrackingService,UserTrackingService, AuthService
   ],
   bootstrap: [AppComponent]
 })
